@@ -7,12 +7,13 @@ let loginButton = document.getElementById('loginButton');
 //     console.log('Login attempted');
 //}
 
-let baseUrl = "http://localhost:8081/login/"
+let baseUrl = "http://localhost:8081/login/";
+
 async function getEmpUsername()
 {
     let usernameInput = document.getElementById('usernameInput').value;
     console.log(usernameInput);
-    await fetch(`${baseUrl}/${usernameInput}`);
+    let res = await fetch(`${baseUrl}/${usernameInput}`);
 
     if(res.status == 200)
     {
@@ -32,6 +33,15 @@ async function getEmpPassword()
     let passwordInput = document.getElementById('passwordInput').value;
     console.log(passwordInput);
     await fetch(`${baseUrl}/${passwordInput}`);
+
+    console.log(Response);
+}
+
+async function getEmpRole()
+{
+    let roleInput = document.getElementById('roleInput').value;
+    console.log(roleInput);
+    await fetch(`${baseUrl}/${empRoleInput}`);
 
     console.log(Response);
 }

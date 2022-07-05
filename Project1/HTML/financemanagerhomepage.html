@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="C:\Users\tsher\Desktop\Project_1\theresa_sherman_p1\Project1\favicon.ico.ico" type="image/x-icon">
-    <title>Employee Reimbursement System</title>
+    <title>ERS Finance Manager Homepage</title>
     <!--can also add internal CSS styling here!-->
     <style>
         #fmpageheading
@@ -21,8 +21,9 @@
             <h2 id = "fmpageheading"><center><u> Welcome to the Finance Manager Homepage!</u></center></h2>
         
             <h4><center>Please select the appropriate request below to view</center></h4>
-            <button style="position: absolute; left:50%; transform: translateX(-50%);" id="viewOpenRequestsButton" type="button" onclick="getOpenRequests()">View open requests</button>
-            
+        <div id = viewOpenRequestsDiv>
+            <button style="position: absolute; left:50%; transform: translateX(-50%);" id="viewOpenRequestsButton" type="button" onclick="viewOpenRequests()">View open requests</button>
+        </div>
         </p>
     </div>
     <script src="C:\Users\tsher\Desktop\Project_1\theresa_sherman_p1\Project1\JavaScript\scripts\fmHomepageScript.js"></script>

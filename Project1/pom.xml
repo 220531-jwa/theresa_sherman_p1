@@ -30,7 +30,8 @@
 			<scope>test</scope>
 		</dependency>
  		
-		<!-- 		<dependency>
+		<!-- Only needed if you use these browsers
+		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-firefox-driver</artifactId>
 			<version>4.1.2</version>
