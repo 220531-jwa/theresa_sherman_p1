@@ -1,0 +1,8 @@
+package com.revature.repositories;
+
+public class RequestDAO {
+
+	public List<Request> getAllRequests(){
+}
+	public Request getRequestById(int requestId) {
+}

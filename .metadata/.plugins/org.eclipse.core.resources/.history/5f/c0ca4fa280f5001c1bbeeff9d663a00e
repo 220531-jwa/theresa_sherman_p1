@@ -1,0 +1,17 @@
+package dev.sherman.repositories;
+
+import java.util.List;
+
+import dev.sherman.models.Employee;
+
+public class EmployeeDAO {
+	//list all employees in the database
+	public List<Employee> getAllEmployees(){
+}
+	//get employee by employee Id
+	public Employee getEmployeeById(int empId) {
+}
+	//add a new employee
+	public Employee addEmployee(Employee e) {
+		
+	}

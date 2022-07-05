@@ -1,0 +1,69 @@
+import java.util.List;
+
+import dev.sherman.models.Employee;
+import dev.sherman.repositories.EmployeeDAO;
+
+public class Project1 {
+
+	
+	public static void main(String[] args) {
+		
+
+		RequestDAO rd = new RequestDAO();
+		EmployeeController ec = new EmployeeController(new EmployeeService(new EmployeeDAO()));
+		Javalin app = Javalin.create();
+		
+		app.start(8081);
+		
+		app.routes(() -> {
+			path("/employees", () -> { 
+				get(uc::getAllEmployees);
+				post(ec::createNewEmployee);
+				path("/{id}", () -> { 
+					get(uc::getEmployeeById);
+					delete(uc::deleteEmployee);
+					put(ec::updateEmployee); 
+					patch(ec::updatePassword);
+					path("/requests", () -> { 
+						get(ctx -> {
+							int id = Integer.parseInt(ctx.pathParam("id"));
+							List<Request> requests = rd.getRequestsByEmployeeId(id);
+							ctx.status(200);
+							ctx.json(requests);
+						});
+						path("/{requestId}", () -> { 
+							patch(RequestController::markRequestAsComplete);
+						});
+						
+					});
+				});
+			});
+		});
+		
+		app.exception(Exception.class, (e, ctx) -> {
+		    ctx.status(404);
+		    ctx.result("<h1>Employee not found</h1>");
+		});
+		
+		app.get("/test", ctx -> {
+			ctx.status(200);
+			String name = ctx.queryParam("name");
+			ctx.result("Test successful! Hello " + name);
+		});
+		
+		app.get("/bodystring",ctx -> {
+			
+			String body = ctx.body();
+			System.out.println("Body: " + body);
+			String[] split = body.split(":");
+			 
+			 for (String s : split) {
+				 System.out.println(s);
+			 }
+			
+		});
+		
+	}
+
+
+}

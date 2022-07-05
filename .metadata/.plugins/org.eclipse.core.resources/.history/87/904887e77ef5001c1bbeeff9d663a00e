@@ -1,0 +1,12 @@
+package com.revature.repositories;
+
+import java.util.List;
+
+import dev.sherman.models.Employee;
+
+public class EmployeeDAO {
+	
+	public List<Employee> getAllEmployees(){
+}
+	public Employee getEmployeeById(int empId) {
+}

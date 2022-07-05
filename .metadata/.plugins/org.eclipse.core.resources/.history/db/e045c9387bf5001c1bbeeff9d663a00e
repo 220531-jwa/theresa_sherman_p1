@@ -1,0 +1,21 @@
+package dev.sherman.models;
+
+public class Request {
+
+	private int requestId;
+	private String requestDate;
+	private String requestStatus;
+	private int compProof;
+	private int eventDate;
+	private int eventTime;
+	private String eventLocation;
+	private String eventDesc;
+	private int eventCost;
+	private String eventType;
+	private String workJust;
+	private int projReim;
+	private String gradeReq;
+	private String gradeFormat;
+	
+	
+}

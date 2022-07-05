@@ -1,0 +1,17 @@
+import java.util.List;
+
+import dev.sherman.models.Employee;
+import dev.sherman.repositories.EmployeeDAO;
+
+public class Project1 {
+
+	
+	public static void main(String[] args) {
+		
+
+		EmployeeDAO employeeDao = new EmployeeDAO();
+		
+		List<Employee> employees = employeeDao.getAllEmployees();
+		System.out.println(employees);
+	}
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./myStyles.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C:\Users\tsher\Desktop\Project_1\theresa_sherman_p1\Project1\favicon.ico.ico" type="image/x-icon">
+    <title>Employee Reimbursement System</title>
+    <!--can also add internal CSS styling here!-->
+    <style>
+    #pageheading
+    {
+        border-style: solid;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            <h2 id = "pageheading"><center> Welcome to the NEW Employee Reimbursement System!</center></h2>
+        
+            <h4><center><u>Please enter your login credentials below to continue</u></center></h4>
+            <form>
+                <label style="position: absolute; left:50%; transform: translateX(-50%);" for="empUsername">Username:
+                </label><br>
+                <input style="position: absolute; left:50%; transform: translateX(-50%);" id="usernameInput" type="text" placeholder="Enter your username"/><br><br>
+                <label style="position: absolute; left:50%; transform: translateX(-50%);" for="empPassword">Password:
+                </label><br>
+                <input style="position: absolute; left:50%; transform: translateX(-50%);" id="passwordInput"
+                    type="password" placeholder="Enter your password"/><br><br>
+                <label style="position: absolute; left:50%; transform: translateX(-50%);" for="empRole">Select a role:
+                </label><br>
+                <select style="position: absolute; left:50%; transform: translateX(-50%);" name="empRole" id="empRole" required>
+                    <option value="Representative">Representative</option>
+                    <option value="Finance Manager">Finance Manager</option>
+                </select><br><br>
+                <button id="loginButton" style="position: absolute; left:50%; transform: translateX(-50%);" type="submit" onclick="getEmpUsername(); getEmpPassword();">Login</button>
+            </form>
+        </p>
+    </div>
+   <script src="C:\Users\tsher\Desktop\Project_1\theresa_sherman_p1\Project1\JavaScript\scripts\loginScript.js"></script>
+</body>
+</html>

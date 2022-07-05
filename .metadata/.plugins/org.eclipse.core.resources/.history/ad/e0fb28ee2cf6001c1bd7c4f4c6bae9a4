@@ -1,0 +1,39 @@
+package dev.sherman.screenshots;
+
+import java.io.File;
+import java.sql.Driver;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
+public class ErsScreenshotTest {
+
+	@BeforeAll
+	public static void setup() {
+		File chrome = new File("src/test/resources/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath(), null));
+		driver = new ChromeDriver();
+	}
+	
+	@Test
+	public void screenshotTest() {
+		
+		//load the webpage
+		driver.get("https://www.google/com"); //change url to webpage
+		
+		//cast our driver as a TakeScreenshot class (from Selenium)
+		TakesScreenshot screenshot = (TakesScreenshot) driver;
+		
+		//take a screenshot
+		File ogScreenshot = screenshot.getScreenshotAs(OutputType.FILE);
+		
+		//save it to some location by using commons-io
+		
+	}
+	
+	@AfterAll
+	public static void teardown() {
+		driver.quit(); //closing any browser windows being automated/controlled by the WebDriver and destroying that instance
+	}
+}

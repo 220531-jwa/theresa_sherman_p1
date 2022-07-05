@@ -1,0 +1,12 @@
+package com.revature.repositories;
+
+import java.util.List;
+
+import dev.sherman.models.Request;
+
+public class RequestDAO {
+
+	public List<Request> getAllRequests(){
+}
+	public Request getRequestById(int requestId) {
+}

@@ -1,0 +1,19 @@
+package dev.sherman.repositories;
+
+import java.util.List;
+
+import dev.sherman.models.Request;
+
+public class RequestDAO {
+	//list all requests in the database
+	public List<Request> getAllRequests(){
+}
+	//get a request by request Id
+	public Request getRequestById(int requestId) {
+}
+	//create a request
+	public Request createRequest(Request r) {
+		
+	}
+	
+	

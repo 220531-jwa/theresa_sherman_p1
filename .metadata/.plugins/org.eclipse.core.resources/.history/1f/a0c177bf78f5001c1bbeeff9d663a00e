@@ -1,0 +1,5 @@
+package dev.sherman.models;
+
+public class Employee {
+
+}

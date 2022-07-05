@@ -1,0 +1,8 @@
+package com.revature.repositories;
+
+public class EmployeeDAO {
+	
+	public List<Employee> getAllEmployees(){
+}
+	public Employee getEmployeeById(int empId) {
+}

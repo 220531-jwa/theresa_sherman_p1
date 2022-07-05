@@ -1,0 +1,10 @@
+import com.revature.repositories.EmployeeDAO;
+
+public class Project1 {
+
+	EmployeeDAO employeeDao = new EmployeeDAO();
+	
+	public static void main(String[] args) {
+		
+	}
+}

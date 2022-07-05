@@ -1,0 +1,38 @@
+<!--This HTML document is creating HTML structure for our ERS application-->
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="./myStyles.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="C:\Users\tsher\Desktop\Project_1\theresa_sherman_p1\Project1\favicon.ico.ico" type="image/x-icon">
+    <title>Employee Reimbursement System</title>
+    <!--can also add internal CSS styling here!-->
+    <style>
+        #epageheading{
+            background-color:moccasin
+        }
+    </style>
+</head>
+<body>
+ <div>
+    <p>
+        <h2 id = "epageheading"><center><u> Welcome to your Employee Homepage!</u></center></h2>
+    
+        <h4><center>Please select the option below to choose what you would like to do next.</center></h4>
+    </p>
+</div>
+<div id =  "getMyRequestsDiv">
+ <button style="position: absolute; left:50%; transform: translateX(-50%);" id="getMyRequestsButton" type="button" onclick="getMyRequests()">View your requests</button> 
+</div><br><br>
+ <div id = "createNewRequestDiv">
+    <button style="position: absolute; left:50%; transform: translateX(-50%);" id="createNewRequestButton" type="button" onclick="getNewRequestForm()">Complete a new request</button> 
+ </div><br><br>
+ <div id = "updateOpenRequestsDiv">
+    <button style="position: absolute; left:50%; transform: translateX(-50%);" id="updateOpenRequestButton" type="button" onclick="updateOpenRequest()">Update an open request</button> 
+ </div><br><br>
+ <script src="C:\Users\tsher\Desktop\Project_1\theresa_sherman_p1\Project1\JavaScript\scripts\eHomepageScript.js"></script>
+</body>
+
+
+
+</html>
