@@ -5,15 +5,15 @@ public class Request {
 	private int requestId;
 	private String requestDate;
 	private String requestStatus;
-	private int compProof;
-	private int eventDate;
-	private int eventTime;
+	private String compProof;
+	private String eventDate;
+	private String eventTime;
 	private String eventLocation;
 	private String eventDesc;
-	private int eventCost;
+	private double eventCost;
 	private String eventType;
 	private String workJust;
-	private int projReim;
+	private double projReim;
 	private String gradeReq;
 	private String gradeFormat;
 	private int empId;
@@ -22,9 +22,9 @@ public class Request {
 		super();
 	}
 	
-	public Request(int requestId, String requestDate, String requestStatus, int compProof,
-			int eventDate, int eventTime, String eventLocation, String eventDesc, int eventCost,
-			String eventType, String workJust, int projReim, String gradeReq, String gradeFormat,
+	public Request(int requestId, String requestDate, String requestStatus, String compProof,
+			String eventDate, String eventTime, String eventLocation, String eventDesc, double eventCost,
+			String eventType, String workJust, double projReim, String gradeReq, String gradeFormat,
 			int empId) {
 				super();
 				this.requestId = requestId;
@@ -68,27 +68,27 @@ public class Request {
 		this.requestStatus = requestStatus;
 	}
 
-	public int getCompProof() {
+	public String getCompProof() {
 		return compProof;
 	}
 
-	public void setCompProof(int compProof) {
+	public void setCompProof(String compProof) {
 		this.compProof = compProof;
 	}
 
-	public int getEventDate() {
+	public String getEventDate() {
 		return eventDate;
 	}
 
-	public void setEventDate(int eventDate) {
+	public void setEventDate(String eventDate) {
 		this.eventDate = eventDate;
 	}
 
-	public int getEventTime() {
+	public String getEventTime() {
 		return eventTime;
 	}
 
-	public void setEventTime(int eventTime) {
+	public void setEventTime(String eventTime) {
 		this.eventTime = eventTime;
 	}
 
@@ -108,11 +108,11 @@ public class Request {
 		this.eventDesc = eventDesc;
 	}
 
-	public int getEventCost() {
+	public double getEventCost() {
 		return eventCost;
 	}
 
-	public void setEventCost(int eventCost) {
+	public void setEventCost(double eventCost) {
 		this.eventCost = eventCost;
 	}
 
@@ -132,11 +132,11 @@ public class Request {
 		this.workJust = workJust;
 	}
 
-	public int getProjReim() {
+	public double getProjReim() {
 		return projReim;
 	}
 
-	public void setProjReim(int projReim) {
+	public void setProjReim(double projReim) {
 		this.projReim = projReim;
 	}
 

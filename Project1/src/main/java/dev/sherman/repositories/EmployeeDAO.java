@@ -112,7 +112,7 @@ public class EmployeeDAO {
 	
 		try (Connection conn = cu.getConnection()) {
 			PreparedStatement ps = conn.prepareStatement(sql);
-			ps.setString(4, username);
+			ps.setString(1, username);
 			
 			ResultSet rs = ps.executeQuery();
 			

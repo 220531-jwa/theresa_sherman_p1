@@ -19,5 +19,10 @@ public RequestServices(RequestDAO rd) {
 		}	
 	
 	}
+	//create new request
+	public Request createRequest(Request r) {
+		Request createdRequest = rd.createRequest(r);
+		return createdRequest;
 }
+	}
 

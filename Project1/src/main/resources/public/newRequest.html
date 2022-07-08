@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="./myStyles.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C:\Users\tsher\Desktop\Project_1\theresa_sherman_p1\Project1\favicon.ico.ico"
+        type="image/x-icon">
+    <title>Reimbursement Request Submission</title>
+    <!-- CSS only -->
+</head>
+
+<body>
+        <h4>
+            <center>Please fill in all criteria below and select Finish to submit a new reimbursement request.</center>
+        </h4>
+        <h5 style="color: red;">
+            <center>MAKE SURE YOU ARE IN FULL SCREEN MODE FOR BEST VIEW</center>
+        </h5>
+        <div class="container" style="position: absolute; left:50%; transform: translateX(-50%);"></div>
+            <label for="empId" style="position: absolute; left:50%; transform: translateX(-50%);">Enter your Employee ID
+                Number:</label><br>
+            <input id="employeeIdInput"
+                style="position: absolute; left:50%; transform: translateX(-50%);"></input><br><br>
+            <label for="currentDate" style="position: absolute; left:50%; transform: translateX(-50%);">Enter today's
+                date:
+            </label><br>
+            <input id="currentDateInput" type="text" placeholder="MM-DD-YYYY"
+                style="position: absolute; left:50%; transform: translateX(-50%);" /><br><br>
+            <label style="position: absolute; left:50%; transform: translateX(-50%);" for="reqStatus">Enter your request
+                status <br> (Type "NEW" for new requests):
+            </label><br><br>
+            <input style="position: absolute; left:50%; transform: translateX(-50%);" id="requestStatusInput"
+                type="text" /><br><br>
+            <label for="compProof" style="position: absolute; left:50%; transform: translateX(-50%);">What type of proof
+                will you provide for completion?</label><br><br>
+            <label for="compProofDescription" style="position: absolute; left:50%; transform: translateX(-50%);">(Enter
+                Grade, Pass/Fail, or Presentation)</label><br><br>
+            <input id="compProofDropdown" type="text"
+                style="position: absolute; left:50%; transform: translateX(-50%);" /><br><br>
+            <label for="eventDate" style="position: absolute; left:50%; transform: translateX(-50%);">Enter date of
+                event:
+            </label><br>
+            <input id="eventDateInput" type="text" placeholder="MM-DD-YYYY"
+                style="position: absolute; left:50%; transform: translateX(-50%);" /><br><br>
+            <label for="eventTime" style="position: absolute; left:50%; transform: translateX(-50%);">What time does the
+                event start?
+            </label><br>
+            <input id="eventTimeInput" type="text" placeholder="hh:mm pm/am"
+                style="position: absolute; left:50%; transform: translateX(-50%);" /><br><br>
+            <label for="eventLocation" style="position: absolute; left:50%; transform: translateX(-50%);">Where is the
+                event located?
+            </label><br>
+            <input id="eventLocationInput" type="text"
+                style="position: absolute; left:50%; transform: translateX(-50%);" /><br><br>
+            <label for="eventDesc" style="position: absolute; left:50%; transform: translateX(-50%);">Please provide a
+                brief description of the event?
+            </label><br><br>
+            <input id="eventDescInput" type="text"
+                style="position: absolute; left:50%; transform: translateX(-50%);" /><br><br>
+            <label for="eventCost" style="position: absolute; left:50%; transform: translateX(-50%);">What is the cost
+                for attending the event?
+            </label><br><br>
+            <input id="eventCostInput" type="text"
+                style="position: absolute; left:50%; transform: translateX(-50%);" /><br><br>
+            <label for="eventType" style="position: absolute; left:50%; transform: translateX(-50%);">What type of event
+                is it? Input the best option below the list.</label><br><br>
+            <label for="eventTypeOptions" style="position: absolute; left:50%; transform: translateX(-50%);"> University
+                Course,
+                Seminar, Certification Preparation Course, Certification, Technical Training, or Other.
+            </label><br><br><br><br>
+            <input id="eventTypeDropdown" style="position: absolute; left:50%; transform: translateX(-50%);"><br><br>
+            <label for="workJust" style="position: absolute; left:50%; transform: translateX(-50%);">What is the reason
+                you are attending this event?
+            </label><br><br>
+            <input id="workJustInput" type="text"
+                style="position: absolute; left:50%; transform: translateX(-50%);" /><br><br>
+            <label for="projReim" style="position: absolute; left:50%; transform: translateX(-50%);">Calcuate the
+                reimbursement cost and enter it below the table.
+            </label><br><br>
+            <ul style="position: absolute; left:45%; transform: translateX(-50%);">
+                <li>University Course = 80% reimbursement</li>
+                <li>Seminar = 60% reimbursement</li>
+                <li>Certification Preparation Course = 75% reimbursement</li>
+                <li>Certification = 100% reimbursement</li>
+                <li>Technical Training = 90% reimbursement</li>
+                <li>Other = 30% reimbursement</li>
+            </ul><br><br><br><br><br><br><br><br><br><br>
+            <input id="projReimInput" type="text" placeholder="$00.00"
+                style="position: absolute; left:50%; transform: translateX(-50%);" /><br><br>
+            <label for="gradeReq" style="position: absolute; left:50%; transform: translateX(-50%);">What is the grade
+                requirement to pass (if none, type n/a?
+            </label><br><br>
+            <input id="gradeReqInput" type="text"
+                style="position: absolute; left:50%; transform: translateX(-50%);" /><br><br>
+            <label for="gradeFormat" style="position: absolute; left:50%; transform: translateX(-50%);">What is the
+                grade format for the event (pass/fail, letter grade, if none, type n/a?
+            </label><br><br>
+            <input id="gradeFormatInput" type="text"
+                style="position: absolute; left:50%; transform: translateX(-50%);" /><br><br>
+    
+        <button id="submitNewRequest" style="position: absolute; left:50%; transform: translateX(-50%);" type="button"
+            onclick="submitRequest();">Submit</button>
+    </div>
+    <script
+        src="C:\Users\tsher\Desktop\Project_1\theresa_sherman_p1\Project1\src\main\resources\public\newRequestScript.js"></script>
+</body>
+
+</html>

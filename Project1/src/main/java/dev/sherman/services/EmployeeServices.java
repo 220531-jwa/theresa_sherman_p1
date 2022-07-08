@@ -39,10 +39,10 @@ public class EmployeeServices {
 		return employeeDao.getAllEmployees();
 	}
 	//Getting an employee by their employee ID
-	public Employee getEmployeeById(int empid) throws Exception {
+	public Employee getEmployeeById(int empId) throws Exception {
 		// this is where you could put some business logic 
 		// for example checking if the User returned by userDao.getUserById(id) is null 
-		Employee e = employeeDao.getEmployeeById(empid);
+		Employee e = employeeDao.getEmployeeById(empId);
 		
 		if (e == null) {
 			throw new Exception("Employee with that ID not found");

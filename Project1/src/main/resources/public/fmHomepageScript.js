@@ -1,4 +1,4 @@
-let baseUrl = 
+let baseUrl = "http://localhost:8081/login/employee/20";
 let viewOpenRequestsDiv = document.getElementById("requests");
 
 function viewOpenRequests(){

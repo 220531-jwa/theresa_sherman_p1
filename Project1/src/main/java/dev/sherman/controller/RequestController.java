@@ -13,6 +13,14 @@ public class RequestController {
 			this.rs= rs;
 		}
 		
+		public void createRequest(Context ctx) {
+			//	log.info("Creating a new request");
+				ctx.status(201);
+				Request requestFromEmployeeBody = ctx.bodyAsClass(Request.class);
+				Request r = rs.createRequest(requestFromEmployeeBody); // unmarshalling
+				ctx.json(r);
+			}
+		
 		public static void markRequestAsComplete(Context ctx) {
 //			Request r = ctx.bodyAsClass(Request.class);
 //			int empId = r.getEmpId();

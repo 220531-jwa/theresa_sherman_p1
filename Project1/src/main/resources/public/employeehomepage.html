@@ -1,6 +1,5 @@
 <!--This HTML document is creating HTML structure for our ERS application-->
 <!DOCTYPE html>
-
 <html>
 <head>
     <link href="./myStyles.css" rel="stylesheet"/>
@@ -25,14 +24,16 @@
  <button style="position: absolute; left:50%; transform: translateX(-50%);" id="getMyRequestsButton" type="button" onclick="getMyRequests()">View your requests</button> 
 </div><br><br>
  <div id = "createNewRequestDiv">
-    <button style="position: absolute; left:50%; transform: translateX(-50%);" id="createNewRequestButton" type="button" onclick="getNewRequestForm()">Complete a new request</button> 
+    <button style="position: absolute; left:50%; transform: translateX(-50%);" id="createNewRequestButton" type="button" 
+    onclick="window.location.href = 'C:/Users/tsher/Desktop/Project_1/theresa_sherman_p1/Project1/src/main/resources/public/newRequest.html';">
+    Complete a new request</button> 
  </div><br><br>
  <div id = "updateOpenRequestsDiv">
-    <button style="position: absolute; left:50%; transform: translateX(-50%);" id="updateOpenRequestButton" type="button" onclick="updateOpenRequest()">Update an open request</button> 
+    <button style="position: absolute; left:50%; transform: translateX(-50%);" id="updateOpenRequestButton" type="button" onclick="updateOpenRequest()">
+        Update an open request</button> 
  </div><br><br>
  <script src="C:\Users\tsher\Desktop\Project_1\theresa_sherman_p1\Project1\JavaScript\scripts\eHomepageScript.js"></script>
 </body>
-
-
-
 </html>
+<!--<button id="loginButton" style="position: absolute; left:50%; transform: translateX(-50%);" type="submit"
+                onclick="login();">Login</button>  -->

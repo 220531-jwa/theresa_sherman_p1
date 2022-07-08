@@ -56,7 +56,8 @@ public class EmployeeController {
 			ctx.status(200);
 			ctx.json(e);
 		} else {
-	//log.error("Employee with id of " + empId + " attempted to login, but does not exist.");
+			System.out.println("The employee ID you are searching for does not exist, please try again.");
+			//can also add a - log.error("Employee with id of " + empId + " attempted to login, but does not exist.");
 			ctx.status(404);
 		}
 		

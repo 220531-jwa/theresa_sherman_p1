@@ -1,3 +1,5 @@
+let baseUrl = "http://localhost:8081/login/employee/1";
+
 function getMyRequests(){
 }
 
